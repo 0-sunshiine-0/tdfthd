@@ -1,11 +1,11 @@
 
 :root {
-  --primary-color: #0056b3;
-  --bg-color: #f8f9fa;
+  --primary-color: #ffaff2;
+  --bg-color: #ffd1fd;
   --text-color: #212529;
-  --card-bg: #ffffff;
-  --warning-color: #ffc107;
-  --danger-color: #dc3545;
+  --card-bg: #ff79ed;
+  --warning-color: #f823ff;
+  --danger-color: #c21b2b;
   --success-color: #28a745;
 }
 
@@ -53,7 +53,7 @@ body {
   font-size: 1.6rem;
   font-weight: bold;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-  border: 4px solid white;
+  border: 4px solid rgb(159, 0, 165);
 }
 
 .btn-help:hover {
