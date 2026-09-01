@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #ff84ea;
+  --primary-color: #ff5fe4;
   --bg-color: #ffd1fd;
   --text-color:#4b224b;
   --card-bg: #ffa4f3;
@@ -147,7 +147,7 @@ h2 {
 }
 
 #ajuda-urgente {
-  background-color: #fff5f5;
+  background-color: #ff8b8b;
   border: 3px dashed var(--danger-color);
 }
 
