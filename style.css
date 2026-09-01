@@ -1,107 +1,187 @@
 
-<!DOCTYPE html>
-<html lang="pt-br">
+:root {
+  --primary-color: #0056b3;
+  --bg-color: #f8f9fa;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Segurança Digital Prática</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+}
 
-<body>
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
 
-  <!-- 1. INÍCIO (Banner) -->
-  <header class="hero-banner">
-    <h1>Navegação Segura</h1>
-    <p>Proteja-se e navegue com confiança na internet.</p>
-    <a href="#ajuda-urgente" class="btn-help">
-      🆘 PRECISO DE AJUDA AGORA
-    </a>
-  </header>
+/* 1. SEÇÃO INÍCIO (Banner) */
+.hero-banner {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-bottom: 8px solid #003d80;
+}
 
-  <div class="container">
+.hero-banner h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
 
-    <!-- 2. DICAS IMPORTANTES -->
-    <section id="dicas">
-      <h2>📌 Dicas Importantes</h2>
-      <div class="tip-list">
-        <div class="tip-box">1. Senhas são secretas: não anote no celular nem conte para ninguém.</div>
-        <div class="tip-box">2. Desconfie de urgência: bancos nunca pedem ações imediatas por telefone.</div>
-        <div class="tip-box">3. Use o cadeado: verifique se há um cadeado ao lado do endereço do site.</div>
-      </div>
-    </section>
+.hero-banner p {
+  font-size: 1.4rem;
+  margin: 1rem 0 2rem 0;
+  opacity: 0.9;
+}
 
-    <!-- 3. DIREITOS NA INTERNET -->
-    <section id="direitos">
-      <h2>⚖️ Direitos na Internet</h2>
-      <div class="rights-content">
-        <p>No Brasil, você é protegido por leis importantes como o <b>Marco Civil da Internet</b> e a <b>Lei Geral de
-            Proteção de Dados (LGPD)</b>.</p>
+.btn-help {
+  display: inline-block;
+  background-color: var(--danger-color);
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 4px solid white;
+}
 
-        <div class="rights-highlight">
-          <b>Privacidade:</b> Ninguém pode acessar suas mensagens ou fotos sem sua permissão.
-        </div>
+.btn-help:hover {
+  background-color: #bd2130;
+}
 
-        <div class="rights-highlight">
-          <b>Clareza:</b> Empresas devem explicar de forma simples por que pedem seu CPF ou telefone.
-        </div>
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
 
-        <div class="rights-highlight">
-          <b>Segurança:</b> Você tem o direito de navegar em sites que protejam seus dados financeiros.
-        </div>
+section {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
 
-        <p>Essas leis garantem que a internet seja um espaço de respeito, onde o cidadão tem o controle sobre suas
-          próprias informações.</p>
-      </div>
-    </section>
+h2 {
+  color: var(--primary-color);
+  font-size: 2.1rem;
+  border-bottom: 5px solid var(--warning-color);
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
 
-    <!-- 4. COMO SABER SE ESTOU CAINDO EM UM GOLPE? -->
-    <section id="golpes">
-      <h2>🔍 Sinais de um Golpe</h2>
-      <p>Fique atento! Se encontrar algum destes sinais, pare e peça ajuda:</p>
+/* 2. DICAS IMPORTANTES */
+.tip-list {
+  list-style: none;
+  padding: 0;
+}
 
-      <div class="alert-card">
-        <div class="alert-icon">⏳</div>
-        <div class="alert-text">
-          <b>Senso de Urgência:</b> Mensagens dizendo que "sua conta será bloqueada hoje" se você não clicar.
-        </div>
-      </div>
+.tip-box {
+  background: #e7f1ff;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 10px solid var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #004085;
+}
 
-      <div class="alert-card">
-        <div class="alert-icon">🎁</div>
-        <div class="alert-text">
-          <b>Prêmios e Sorteios:</b> Ganhou algo que não participou? É um convite falso para roubar dados.
-        </div>
-      </div>
+/* 3. DIREITOS NA INTERNET */
+.rights-content {
+  font-size: 1.25rem;
+  color: #333;
+}
 
-      <div class="alert-card">
-        <div class="alert-icon">📱</div>
-        <div class="alert-text">
-          <b>Pedido de Pix ou Código:</b> Parentes pedindo dinheiro por números novos? Ligue para o número antigo para
-          conferir.
-        </div>
-      </div>
-    </section>
+.rights-content p {
+  margin-bottom: 1.5rem;
+}
 
-    <!-- Seção de Ajuda (Destino do botão do banner) -->
-    <section id="ajuda-urgente">
-      <h2 style="color: var(--danger-color); border-bottom-color: var(--danger-color);">🚨 O que fazer agora?</h2>
-      <p style="font-size: 1.3rem;">Se você acha que está em perigo digital:</p>
-      <ul style="font-size: 1.2rem;">
-        <li><b>Não transfira dinheiro</b> e não passe códigos de SMS.</li>
-        <li><b>Desligue a ligação</b> ou feche o aplicativo de conversa.</li>
-        <li><b>Chame alguém de confiança</b> (filho, neto ou amigo próximo).</li>
-        <li><b>Procure seu banco</b> através do número oficial no verso do cartão.</li>
-      </ul>
-    </section>
+.rights-highlight {
+  background-color: #f1f8ff;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid var(--success-color);
+  margin: 10px 0;
+}
 
-  </div>
+/* 4. COMO SABER SE ESTOU CAINDO EM UM GOLPE? */
+.alert-card {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  background: #fff3cd;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #ffeeba;
+}
 
-  <footer>
-    <p>A internet é para todos. Navegue com calma e segurança! 🛡️</p>
-  </footer>
+.alert-icon {
+  font-size: 3rem;
+  margin-right: 20px;
+  line-height: 1;
+}
 
-</body>
+.alert-text b {
+  display: block;
+  color: #856404;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
 
-</html>
+.alert-text span {
+  font-size: 1.2rem;
+}
+
+#ajuda-urgente {
+  background-color: #fff5f5;
+  border: 3px dashed var(--danger-color);
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Ajustes para Celular */
+@media (max-width: 600px) {
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .btn-help {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 15px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .alert-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .alert-icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}
