@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #ff5fe4;
+  --primary-color: #b33b9f;
   --bg-color: #ffd1fd;
   --text-color:#4b224b;
   --card-bg: #ffa4f3;
@@ -21,7 +21,7 @@ body {
   padding: 0;
   line-height: 1.8;
   scroll-behavior: smooth;
-}
+}uyk
 
 /* 1. SEÇÃO INÍCIO (Banner) */
 .hero-banner {
