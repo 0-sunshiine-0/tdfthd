@@ -4,7 +4,7 @@
   --primary-color: #74026a;
   --bg-color: #fcafff;
   --text-color: #752020;
-  --card-bg: #f8bbff;
+  --card-bg: #fce2ff;
   --warning-color: #4e0048;
   --danger-color: #ff0019;
   --success-color: #004d12;
@@ -77,7 +77,7 @@ section,
 }
 
 #ajuda-urgente {
-  background-color: #fff5f5;
+  background-color: #ffb1b1;
   border: 3px dashed var(--danger-color);
 }
 
