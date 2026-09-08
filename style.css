@@ -5,7 +5,7 @@
   --bg-color: #fcafff;
   --text-color: #752020;
   --card-bg: #fce0ff;
-  --warning-color: #ffc107;
+  --warning-color: #4e0048;
   --danger-color: #ff0019;
   --success-color: #004d12;
 }
@@ -143,14 +143,14 @@ h2 {
 }
 
 .tip-box {
-  background: #e7f1ff;
+  background: #ffe7fd;
   padding: 25px;
   border-radius: 15px;
   border-left: 10px solid var(--primary-color);
   font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #004085;
+  color: #360336;
 }
 
 /* 3. DIREITOS NA INTERNET */
