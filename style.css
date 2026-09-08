@@ -7,7 +7,7 @@
   --card-bg: #fce0ff;
   --warning-color: #ffc107;
   --danger-color: #ff0019;
-  --success-color: #28a745;
+  --success-color: #004d12;
 }
 
 * {
@@ -112,9 +112,9 @@ section,
   /* Ocupa a largura toda no celular, facilitando o toque */
   margin-top: 2rem;
   padding: 15px;
-  background-color: #6c757d;
+  background-color: #70385e;
   /* Cor cinza para diferenciar do botão de perigo */
-  color: white;
+  color: rgb(255, 145, 145);
   border: none;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -164,7 +164,7 @@ h2 {
 }
 
 .rights-highlight {
-  background-color: #f1f8ff;
+  background-color: #630077;
   padding: 15px;
   border-radius: 10px;
   border-left: 5px solid var(--success-color);
