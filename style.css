@@ -4,7 +4,7 @@
   --primary-color: #74026a;
   --bg-color: #fcafff;
   --text-color: #752020;
-  --card-bg: #5e1b66;
+  --card-bg: #f8bbff;
   --warning-color: #4e0048;
   --danger-color: #ff0019;
   --success-color: #004d12;
@@ -47,7 +47,7 @@ body {
 .btn-help {
   display: inline-block;
   background-color: var(--danger-color);
-  color: white;
+  color: rgb(80, 9, 9);
   text-decoration: none;
   padding: 20px 40px;
   border-radius: 50px;
